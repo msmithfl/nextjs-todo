@@ -1,7 +1,11 @@
 import Head from "next/head";
 import Login from "@/components/Login";
+import { useAuth } from "@/context/AuthContext";
+import UserDashboard from "@/components/UserDashboard";
 
 export default function Home() {
+  const { currentUser } = useAuth();
+
   return (
     <>
       <Head>
@@ -10,7 +14,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Login />
+      {!currentUser && <Login />}
+      {currentUser && <UserDashboard />}
     </>
   );
 }
