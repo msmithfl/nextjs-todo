@@ -45,9 +45,9 @@ export default function Login() {
         className="outline-none duration-300 border-b-2 border-solid border-white focus:border-cyan-300 text-slate-900 p-2 w-full max-w-[40ch]"
       />
       <input
+        type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        type="password"
         placeholder="Password"
         className="outline-none duration-300 border-b-2 border-solid border-white focus:border-cyan-300 text-slate-900 p-2 w-full max-w-[40ch]"
       />
