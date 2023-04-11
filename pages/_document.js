@@ -1,7 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 // this page is used to add additional links into app, to not crowd essential tags in index.js Head
-// Google font, Font Awesome icons
+// Setup: Google font: Montserrat, Font Awesome icons
 export default function Document() {
   return (
     <Html lang="en">
@@ -13,7 +13,7 @@ export default function Document() {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
         <link
